@@ -1,1 +1,91 @@
-css
+
+@font-face {
+    font-family: "saliou-case";
+    src: url(Montserrat-Italic.ttf);
+}
+*{
+    
+    box-sizing: border-box;
+}
+body{
+    margin: 0;    
+font-family: saliou-case sans-serif;
+line-height: 1.7em;
+font-size: 17x;
+}
+header{
+    background-color: #333;
+    padding: 2px 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    padding-left: 200px;
+    height: 70px;
+   
+}
+.header-nav{
+    float: right;
+    padding-top:18px ;
+    padding-right: 40px;
+  
+}
+.header-nav a {
+    padding: 25px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.header-nav a:hover{
+    text-decoration: underline;
+    color:red;
+}
+.HBT{
+    margin-top: 20px;
+    color: white;
+}
+
+section{
+    background-image: url("showcase.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 320px;
+    padding-top: 200px;
+}
+.text{
+    margin: auto;
+    width: 800px;
+    text-align: center;   
+}
+.div-p p{
+font-size: 30px;
+}
+
+.tittle{
+    font-size: 60px;
+    margin: 0px 0px 30px 0px;
+    color:white
+}
+.lorem{
+    font-size: 20px;
+    color: white;
+}
+.enjoy{
+    color: hwb(30 41% 7%);;
+}
+button{
+    margin-top: 30px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+button a {
+    color: white ;
+    text-decoration: none;
+    color: white
+}
+button a:hover{
+    text-decoration: underline;
+    color: red ;
+}
