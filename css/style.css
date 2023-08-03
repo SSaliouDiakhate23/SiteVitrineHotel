@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0;    
+margin: 0;    
 font-family: saliou-case sans-serif;
 line-height: 1.7em;
 font-size: 17x;
@@ -49,13 +49,14 @@ section{
     background-repeat: none;
     background-position: center;
     background-size: cover;
-    padding-bottom: 320px;
+    padding-bottom: 190px;
     padding-top: 200px;
 }
 .text{
     margin: auto;
     width: 800px;
-    text-align: center;   
+    text-align: center;  
+   animation: animatione 3s;
 }
 .div-p p{
 font-size: 30px;
@@ -89,3 +90,46 @@ button a:hover{
     text-decoration: underline;
     color: red ;
 }
+@keyframes animatione  {
+    from{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }}
+    main{
+        display: flex;
+        width: 100%;
+
+    }
+    .div-img{
+        background-image: url(photo-2.jpg);
+        background-position:center ;
+        background-size: cover;
+        width: 50%;
+        display: flex;
+        height: 500px;
+    }
+  .history{
+    font-size: 17px;
+    width: 50%;
+    background-color: black;
+    color:white;
+    text-align: center;  
+    padding-top: 40px;
+    padding: 40px 25px 0px 25px;
+
+
+  }  
+  .our-history{
+color:hwb(30 41% 7%) ;
+  }
+ .read-more{
+    background-color: white;
+    
+ } 
+ .read-more a{
+    color: black;
+ }
