@@ -162,3 +162,11 @@ color:hwb(30 41% 7%) ;
  .tittre{
  margin: 0px 140px;
  }
+ .pied{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    background-color: #333;
+    color: #f4f4f4;
+
+ }
