@@ -1,10 +1,11 @@
 
+/* Non nécessaire */
 @font-face {
     font-family: "saliou-case";
     src: url(Montserrat-Italic.ttf);
 }
 *{
-    
+    /* bien vu mais il y autre chose */
     box-sizing: border-box;
 }
 body{
@@ -16,10 +17,10 @@ font-size: 17x;
 header{
     background-color: #333;
     padding: 2px 20px;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 2;
+    /* non ncéssaire il faut mettre ça dans un container et 
+    le centrer c'est mieux, d'autant plus tu utilises top, right
+     sans préciser la position absolute */
+    /* z-index pour le placer au dessus de quels div ? */
     padding-left: 200px;
     height: 70px;
    
@@ -32,7 +33,8 @@ header{
 }
 .header-nav a {
     padding: 25px;
-    color: aliceblue;
+    /* Souvent il faut éviter de nommer les couleurs par leurs noms */
+    color: #fff; 
     text-decoration: none;
 }
 .header-nav a:hover{
@@ -45,6 +47,11 @@ header{
 }
 
 section{
+    /* Une seule ligne suffisait
+     background: url('showcase.jpg') no-repeat center  center/cover;
+     l'image il fallait le laisser dans son dossier.
+    */
+   
     background-image: url("showcase.jpg");
     background-repeat: none;
     background-position: center;
@@ -53,6 +60,7 @@ section{
     padding-top: 200px;
 }
 .text{
+    /* Margin auto pour du text, c'est pas courant dé */
     margin: auto;
     width: 800px;
     text-align: center;  
@@ -71,6 +79,7 @@ font-size: 30px;
     font-size: 20px;
     color: white;
 }
+
 .enjoy{
     color: hwb(30 41% 7%);;
 }
@@ -79,6 +88,7 @@ button{
     background-color: black;
     padding: 20px;
     border-radius: 8px;
+    /* bouton avec text-decoration */
     text-decoration: none;
 }
 button a {
@@ -132,4 +142,23 @@ color:hwb(30 41% 7%) ;
  } 
  .read-more a{
     color: black;
+ }
+ .grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px;
+ }
+ .great{
+    background-color:#f4f4f4; 
+ }
+ .Meals{
+    background-color: #f7c08a;;
+ }
+ .container{
+    padding: 30px;
+    font-size: 17px;
+    padding-top: 50px;
+ }
+ .tittre{
+ margin: 0px 140px;
  }
